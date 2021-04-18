@@ -22,7 +22,7 @@ Ejemplo:
 
 ### Response 
 
- --- {
+{
     "images": [
         {
             "url": "https://cdn2.thecatapi.com/images/MTU5NjA4OA.jpg",
