@@ -8,14 +8,7 @@ services:
     image: ms_prueba_flink
     container_name: ms_prueba_flink
     restart: unless-stopped
-    networks:
-      - ms_prueba_flink_net
     command: node app.js
-
-networks:
-    ms_prueba_flink_net:
-    name: ms_prueba_flink_net
-    driver: bridge
 
 volumes:
   node_modules:
