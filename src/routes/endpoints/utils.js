@@ -71,7 +71,7 @@ async function convertBase64(url){
 /* function resize  80 px */
 async function resizeImage(url){
     const image = await Jimp.read(url).then(image => {
-        return image.resize(Jimp.AUTO,80);
+        return image.resize(Jimp.AUTO,80).write('lena-small-bw.jpg');
       }).catch(err => {
         console.log(err);
       });

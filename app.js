@@ -21,7 +21,7 @@ app.use('/', (req,res) => {
     res.send("This is the microservicio v.1.0.0");
 });
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () =>{
     console.log(`Server listening on port ${port}`)
