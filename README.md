@@ -43,7 +43,7 @@ Ejemplo:
 
 Ejemplo : 
 
- --- [GET] http://localhost:3000/image_gif
+ [GET] http://localhost:3000/image_gif
  
  ### response 
  
