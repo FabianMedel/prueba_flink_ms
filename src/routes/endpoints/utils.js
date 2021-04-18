@@ -50,7 +50,7 @@ async function process_image(){
 async function exec_proms(url){
     console.log(url)
     let values = Promise.all([resizeImage(url),rotateImage(url),convertBase64(url)]).then(results => {
-        let resultArrayImages = {url:url,m80px: results[0], r30d:results[1],b64:results[2]};
+        let resultArrayImages = {url:url,m80px: JSON.parse(results[0]).data, r30d:JSON.parse(results[1]).data,b64:results[2]};
         return resultArrayImages;
     })
 
@@ -65,7 +65,7 @@ async function convertBase64(url){
         console.log(err);
       });
 
-    return image;
+    return await image;
 }
 
 /* function resize  80 px */
